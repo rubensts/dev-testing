@@ -25,7 +25,7 @@
 
 - create a feature branch:
   ` git branch [name-of-your-feature-branch]
-  git checkout [name-of-your-feature-branch]`
+git checkout [name-of-your-feature-branch]`
 - make the changes and save
 
 ## Stage, commit and push the changes you made
@@ -37,3 +37,7 @@
     `git push -u upstream [name-of-your-feature-branch]`
   - Pushing to MY main
     `git push -u origin [name-of-your-feature-branch]`
+
+### Result
+
+- First time didn't work, trying for the second time
