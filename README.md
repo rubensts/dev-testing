@@ -23,21 +23,37 @@
 
   ```
 
+- Keeping the branch up to date - VERY IMPORTANT!
+  `git pull upstream main`
+- Update those changes to YOUR fork
+  `git push origin manin`
 - create a feature branch:
-  ` git branch [name-of-your-feature-branch]
-git checkout [name-of-your-feature-branch]`
-- make the changes and save
+  `git checkout -b [name-of-your-feature-branch]`
+- NOW proceed to make the changes and SAVE
 
 ## Stage, commit and push the changes you made
 
 - Staging `git add .`
 - Commit `git commit -m "added text to readme"`
 - Pushing - IMPORTANT
+  - Pushing updates only to the corresponding branch on the remote
+    `git push`
   - Pushing to the UPSTREAM
-    `git push -u upstream [name-of-your-feature-branch]`
-  - Pushing to MY main
     `git push -u origin [name-of-your-feature-branch]`
+
+## Submit a pull request
+
+- Proceed with requesting a pull request in the project's main repo (upstream)
+- Once the pull request has been accepted, you can delete the feature branch
+  `git branch -d [name-of-your-feature-branch]`
 
 ### Result
 
 - First time didn't work, trying for the second time
+- Second time it worked, but I needed permission from the owner.
+
+### Correcting
+
+- The correct way to push to the upstream is to use:
+  `git push -u origin [name-of-your-feature-branch]`
+- The info has been corrected to this file
